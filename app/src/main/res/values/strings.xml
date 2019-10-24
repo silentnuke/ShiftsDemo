@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Shifts</string>
+    <string name="title_shifts">Coffee Co Shifts</string>
+    <string name="title_add_shift">Create a Shift</string>
+    <string name="action_add_shift">Add Shift</string>
+    <string name="action_save_shift">Save</string>
+    <string name="empty_shifts_list">There is no shifts. Please add one</string>
+    <string name="add_shift_start_date">Start date</string>
+    <string name="add_shift_end_date">End date</string>
+    <string name="add_shift_employee">Employee</string>
+    <string name="add_shift_role">Role</string>
+    <string name="add_shift_color">Color</string>
+    <string name="add_shift_hint_select_date">Select date</string>
+    <string name="add_shift_error_start_date">Please specify start date</string>
+    <string name="add_shift_error_end_date">Please specify end date</string>
+    <string name="add_shift_error_wrong_end_date">End date should greater than start date</string>
+    <string name="add_shift_error_employee_not_selected">Please select an employee</string>
+    <string name="add_shift_error_role_not_selected">Please select role</string>
+    <string name="add_shift_error_color_not_selected">Please select color</string>
+</resources>

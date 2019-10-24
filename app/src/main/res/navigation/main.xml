@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/shiftsFragment">
+
+    <fragment
+        android:id="@+id/shiftsFragment"
+        android:name="com.silentnuke.shifts.shifts.ShiftsFragment"
+        android:label="@string/title_shifts">
+        <action
+            android:id="@+id/addShift"
+            app:destination="@id/addShiftFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addShiftFragment"
+        android:name="com.silentnuke.shifts.addshift.AddShiftFragment"
+        android:label="@string/title_add_shift" />
+</navigation>

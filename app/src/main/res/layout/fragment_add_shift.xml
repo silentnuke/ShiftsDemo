@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/startDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_shift_start_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/startDateValue"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/startDateValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:drawableRight="@drawable/ic_calendar"
+        android:hint="@string/add_shift_hint_select_date"
+        app:layout_constraintLeft_toRightOf="@id/startDate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/startDate" />
+
+    <TextView
+        android:id="@+id/endDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_shift_end_date"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/endDateValue"
+        app:layout_constraintTop_toBottomOf="@id/startDateValue" />
+
+    <TextView
+        android:id="@+id/endDateValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:drawableRight="@drawable/ic_calendar"
+        android:hint="@string/add_shift_hint_select_date"
+        app:layout_constraintLeft_toRightOf="@id/endDate"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/endDate" />
+
+    <TextView
+        android:id="@+id/employee"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_shift_employee"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/employeeValue"
+        app:layout_constraintTop_toBottomOf="@id/endDateValue" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/employeeValue"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toRightOf="@id/employee"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/employee" />
+
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_shift_role"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/roleValue"
+        app:layout_constraintTop_toBottomOf="@id/employeeValue" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/roleValue"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toRightOf="@id/role"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/role" />
+
+    <TextView
+        android:id="@+id/color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_shift_color"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/colorValue"
+        app:layout_constraintTop_toBottomOf="@id/roleValue" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/colorValue"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toRightOf="@id/color"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/color" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
